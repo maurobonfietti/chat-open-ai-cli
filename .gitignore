@@ -1,0 +1,8 @@
+/vendor/
+/coverage/
+*.php_cs.cache
+.php-cs-fixer.cache
+/nbproject/
+/build/
+/cache/
+/.env
