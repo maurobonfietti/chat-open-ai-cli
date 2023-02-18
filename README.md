@@ -8,7 +8,7 @@
 
 ## GETTING STARTED:
 
-> **Requires [PHP 8.1+]**
+> **Requires PHP 8.1+**
 
 ### Clone repository with git and install dependencies:
 
@@ -51,8 +51,6 @@ Chat to OpenAI from CLI with this command:
 ```bash
 php console chat
 ```
-
-> *I'm using the alias: **chat***.
 
 
 ## OPTIONS:
