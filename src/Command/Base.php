@@ -54,7 +54,7 @@ abstract class Base extends Command
     protected function getModel(InputInterface $input): string
     {
         $model = 'text-davinci-003';
-        if ($input->getOption('code') === true) {
+        if ($input->getOption('codex') === true) {
             $model = 'code-davinci-002';
         }
 
