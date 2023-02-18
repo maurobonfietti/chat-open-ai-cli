@@ -9,7 +9,7 @@ $dotenv->load();
 $dotenv->required(['OPEN_AI_SECRET_API_KEY']);
 
 $appName = 'Ask to OpenAI CLI Tool';
-$version = '0.1.0';
+$version = '0.2.0';
 $application = new Symfony\Component\Console\Application($appName, $version);
 $application->add(new src\Command\AskOpenAI());
 $application->run();

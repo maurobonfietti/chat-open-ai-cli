@@ -55,6 +55,33 @@ php console chat
 > *I'm using the alias: **chat***.
 
 
+## OPTIONS:
+
+Use the OpenAI **Codex** model and allow **multiline** with this command:
+
+```bash
+php console chat --codex --multiline
+```
+
+
+Get help and more info:
+
+```bash
+php console --help
+```
+
+
+Check command version:
+
+```bash
+php console --version
+```
+
+> *I'm using the alias: `chat` equivalent to: `php console chat`*.
+
+> *and using the alias: `code` equivalent to: `php console chat --codex --multiline`*.
+
+
 ## DEMO:
 
 :video_camera: :movie_camera: See the video on Youtube: [I ask the OpenAI API questions from the CLI.](https://youtu.be/EdU8iwBja5U)
@@ -98,7 +125,7 @@ Also, you can set and configure the usage limits (Hard Limit and Soft Limit).
 
 ## LIMITATIONS:
 
-:warning: There is no context or conversation saved. So, each new request is a unique and independent **Q&A**. :robot: :question:
+:warning: There is no context or conversation saved. So, each new request is a unique and independent **Q&A** :robot:.
 
 
 ## HELPFUL EXTERNAL LINKS:
@@ -108,6 +135,10 @@ https://openai.com/api/pricing/
 https://platform.openai.com/tokenizer
 
 https://platform.openai.com/account/usage
+
+https://platform.openai.com/docs/quickstart/adjust-your-settings
+
+https://platform.openai.com/docs/models/finding-the-right-model
 
 
 ## LICENSE:
