@@ -22,7 +22,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.1",
-        "openai-php/client": "^0.3.0",
+        "openai-php/client": "^0.3.2",
         "symfony/console": "^6.2.5",
         "vlucas/phpdotenv": "^5.5"
     },
