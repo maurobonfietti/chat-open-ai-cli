@@ -77,7 +77,7 @@ php console --version
 
 > *I'm using the alias: `chat` equivalent to: `php console chat`*.
 
-> *and using the alias: `code` equivalent to: `php console chat --codex --multiline`*.
+> *and using the alias: `codex` equivalent to: `php console chat --codex --multiline`*.
 
 
 ## DEMO:
