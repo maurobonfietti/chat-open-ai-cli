@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace src\Command;
 
-use OpenAI\Responses\Completions\CreateResponse;
+use OpenAI\Responses\Chat\CreateResponse;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,15 +13,19 @@ use Symfony\Component\Console\Question\Question;
 
 abstract class Base extends Command
 {
+    protected $messages = [];
+
     protected function chat(
         InputInterface $input,
         OutputInterface $output
     ): void {
         $prompt = $this->prompt($input, $output);
 
-        $model = $this->getModel($input);
+        $this->messages[] = ['role' => 'user', 'content' => $prompt];
 
-        $answer = $this->askOpenAI($prompt, $model, 500);
+        $model = 'gpt-3.5-turbo-0301';
+
+        $answer = $this->askOpenAI($model, 500);
 
         $this->writeAnswer($output, $answer);
 
@@ -51,27 +55,16 @@ abstract class Base extends Command
         return $prompt;
     }
 
-    protected function getModel(InputInterface $input): string
-    {
-        $model = 'text-davinci-003';
-        if ($input->getOption('codex') === true) {
-            $model = 'code-davinci-002';
-        }
-
-        return $model;
-    }
-
     protected function askOpenAI(
-        string $prompt,
         string $model,
         int $tokens
-    ): CreateResponse {
+    ) {
         $apiKey = (string) getenv('OPEN_AI_SECRET_API_KEY');
         $client = \OpenAI::client($apiKey);
 
-        return $client->completions()->create([
-            'prompt' => $prompt,
+        return $client->chat()->create([
             'model' => $model,
+            'messages' => $this->messages,
             'max_tokens' => $tokens,
         ]);
     }
@@ -80,10 +73,16 @@ abstract class Base extends Command
         OutputInterface $output,
         CreateResponse $answer
     ): void {
+
+        $this->messages[] = [
+            'role' => 'assistant',
+            'content' => $answer['choices'][0]['message']['content']
+        ];
+
         $output->writeln([
             '',
             '',
-            trim($answer['choices'][0]['text']),
+            trim($answer['choices'][0]['message']['content']),
             '',
             '',
         ]);
