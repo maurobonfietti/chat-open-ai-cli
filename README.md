@@ -55,7 +55,7 @@ php console chat
 
 ## OPTIONS:
 
-Use the OpenAI **Codex** model and allow **multiline** with this command:
+Allow **multiline** with this command:
 
 ```bash
 php console chat --codex --multiline
@@ -76,8 +76,6 @@ php console --version
 ```
 
 > *I'm using the alias: `chat` equivalent to: `php console chat`*.
-
-> *and using the alias: `codex` equivalent to: `php console chat --codex --multiline`*.
 
 
 ## DEMO:
@@ -120,10 +118,6 @@ Also, you can set and configure the usage limits (Hard Limit and Soft Limit).
 ![alt text](multimedia/ScreenshotUsage.png "Account Usage Stats.")
 
 ------
-
-## LIMITATIONS:
-
-:warning: There is no context or conversation saved. So, each new request is a unique and independent **Q&A** :robot:.
 
 
 ## HELPFUL EXTERNAL LINKS:
