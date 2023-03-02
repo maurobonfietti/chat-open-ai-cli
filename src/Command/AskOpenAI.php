@@ -16,13 +16,6 @@ final class AskOpenAI extends Base
             ->setName('chat')
             ->setDescription('Ask questions to OpenAI API from the CLI.')
             ->addOption(
-                'codex',
-                'c',
-                InputOption::VALUE_NONE,
-                'Use the OpenAI Codex model: "code-davinci-002" (instead of using the default model: "text-davinci-003").',
-                null
-            )
-            ->addOption(
                 'multiline',
                 'm',
                 InputOption::VALUE_NONE,

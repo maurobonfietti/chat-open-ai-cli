@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70341be0d359494dadbefcdcb1de3b03",
+    "content-hash": "e10c50576626a835425669d004fc7449",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -401,16 +401,16 @@
         },
         {
             "name": "openai-php/client",
-            "version": "v0.3.2",
+            "version": "v0.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openai-php/client.git",
-                "reference": "95674fbb8618939cb05c816fd1a4d198fae7f9f4"
+                "reference": "2ad7e55f91f893d04ca1dd1fb13a11e7d25ac30e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openai-php/client/zipball/95674fbb8618939cb05c816fd1a4d198fae7f9f4",
-                "reference": "95674fbb8618939cb05c816fd1a4d198fae7f9f4",
+                "url": "https://api.github.com/repos/openai-php/client/zipball/2ad7e55f91f893d04ca1dd1fb13a11e7d25ac30e",
+                "reference": "2ad7e55f91f893d04ca1dd1fb13a11e7d25ac30e",
                 "shasum": ""
             },
             "require": {
@@ -425,7 +425,7 @@
                 "pestphp/pest-plugin-mock": "^2.0.0",
                 "phpstan/phpstan": "^1.10.3",
                 "rector/rector": "^0.14.8",
-                "symfony/var-dumper": "^6.2.5"
+                "symfony/var-dumper": "^6.2.7"
             },
             "type": "library",
             "autoload": {
@@ -462,7 +462,7 @@
             ],
             "support": {
                 "issues": "https://github.com/openai-php/client/issues",
-                "source": "https://github.com/openai-php/client/tree/v0.3.2"
+                "source": "https://github.com/openai-php/client/tree/v0.3.3"
             },
             "funding": [
                 {
@@ -478,7 +478,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-02-28T13:33:04+00:00"
+            "time": "2023-03-02T08:57:28+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -914,12 +914,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "0121954c80fd17c18cf050fe73360e63bb43d4fb"
+                "reference": "e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0121954c80fd17c18cf050fe73360e63bb43d4fb",
-                "reference": "0121954c80fd17c18cf050fe73360e63bb43d4fb",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e",
+                "reference": "e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e",
                 "shasum": ""
             },
             "require": {
@@ -973,7 +973,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-02T07:48:03+00:00"
+            "time": "2023-03-01T10:25:55+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1394,12 +1394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "aee5f59db63978f7785290b94d2f12286b1b590a"
+                "reference": "a8c9cedf55f314f3a186041d19537303766df09a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/aee5f59db63978f7785290b94d2f12286b1b590a",
-                "reference": "aee5f59db63978f7785290b94d2f12286b1b590a",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/a8c9cedf55f314f3a186041d19537303766df09a",
+                "reference": "a8c9cedf55f314f3a186041d19537303766df09a",
                 "shasum": ""
             },
             "require": {
@@ -1471,7 +1471,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-16T12:50:33+00:00"
+            "time": "2023-03-01T10:32:47+00:00"
         },
         {
             "name": "symfony/string",
