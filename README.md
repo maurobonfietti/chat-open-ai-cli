@@ -83,7 +83,7 @@ php console --version
 :video_camera: :movie_camera: See the video on Youtube: [I ask the OpenAI API questions from the CLI.](https://youtu.be/EdU8iwBja5U)
 
 
-https://user-images.githubusercontent.com/24535949/222773676-7d0eb68d-fd0c-4d1d-b2f8-ed3600057959.mp4
+
 
 
 ## DEPENDENCIES:
