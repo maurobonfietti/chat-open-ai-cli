@@ -1,10 +1,12 @@
 {
     "name": "maurobonfietti/chat-open-ai-cli",
-    "description": "Ask questions to OpenAI API using the CLI",
+    "description": "Ask questions to ChatGPT from the CLI",
     "keywords": [
         "OpenAI API",
         "OpenAI",
         "ChatGPT",
+        "GPT-3",
+        "GPT",
         "API",
         "CLI",
         "PHP"
