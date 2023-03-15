@@ -19,7 +19,7 @@ final class AskOpenAI extends Base
                 'multiline',
                 'm',
                 InputOption::VALUE_NONE,
-                'Allow multiline text. Helpful to write text with multiple lines on the terminal. You should confirm the End Of File with "ctrl+d".',
+                'Allow multiline text. Helpful to write text with multiple lines on the terminal. You should confirm the end-of-transmission: Ctrl-D on Unix systems or Ctrl-Z on Windows.',
                 null
             )
         ;
