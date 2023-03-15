@@ -8,8 +8,8 @@ $dotenv = Dotenv\Dotenv::createUnsafeImmutable(__DIR__);
 $dotenv->load();
 $dotenv->required(['OPEN_AI_SECRET_API_KEY']);
 
-$appName = 'Ask to OpenAI CLI Tool';
-$version = '0.3';
+$appName = 'Ask to ChatGPT from the CLI';
+$version = '0.3.1';
 $application = new Symfony\Component\Console\Application($appName, $version);
 $application->add(new src\Command\AskOpenAI());
 $application->run();
