@@ -14,7 +14,7 @@ final class AskOpenAI extends Base
     {
         $this
             ->setName('chat')
-            ->setDescription('Ask questions to OpenAI API from the CLI.')
+            ->setDescription('Ask questions to ChatGPT from the CLI.')
             ->addOption(
                 'multiline',
                 'm',
@@ -30,9 +30,9 @@ final class AskOpenAI extends Base
         OutputInterface $output
     ): int {
         $output->writeln([
-            '==========================================',
-            '<info>Welcome! Ask your questions to OpenAI API:</info>',
-            '==========================================',
+            '===============================================',
+            '<info>Welcome! Ask questions to ChatGPT from the CLI:</info>',
+            '===============================================',
             '',
         ]);
 
