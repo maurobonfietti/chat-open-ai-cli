@@ -39,7 +39,7 @@ abstract class Base extends Command
         /** @var QuestionHelper $questionHelper */
         $questionHelper = $this->getHelper('question');
 
-        $question = new Question('> ');
+        $question = new Question('<info>> </info>');
         if ($input->getOption('multiline') === true) {
             $question->setMultiline(true);
             $output->writeln([
