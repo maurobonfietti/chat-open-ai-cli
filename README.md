@@ -65,7 +65,7 @@ php console chat --multiline
 Get help and more info:
 
 ```bash
-php console --help
+php console chat --help
 ```
 
 
