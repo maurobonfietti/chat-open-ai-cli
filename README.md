@@ -1,6 +1,6 @@
 # Chat using OpenAI API from CLI
 
-:robot: Ask questions to OpenAI API using the CLI.
+:robot: Ask questions to ChatGPT from the CLI.
 
 ![alt text](multimedia/ScreenshotChatCli.png "Screenshot: Chat using OpenAI API from CLI")
 
@@ -58,7 +58,7 @@ php console chat
 Allow **multiline** with this command:
 
 ```bash
-php console chat --codex --multiline
+php console chat --multiline
 ```
 
 
@@ -148,4 +148,4 @@ https://platform.openai.com/docs/models/finding-the-right-model
 
 ## THAT'S IT!
 
-:partying_face: Now go and ask interesting questions to **OpenAI API** from the CLI :computer: :robot:.
+:partying_face: Now go and ask interesting questions to **ChatGPT** from the CLI :computer: :robot:.
