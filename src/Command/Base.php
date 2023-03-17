@@ -23,7 +23,8 @@ abstract class Base extends Command
 
         $this->messages[] = ['role' => 'user', 'content' => $prompt];
 
-        $model = 'gpt-3.5-turbo-0301';
+//        $model = 'gpt-3.5-turbo-0301';
+        $model = 'gpt-4-0314';
 
         $answer = $this->askOpenAI($model, 500);
 
