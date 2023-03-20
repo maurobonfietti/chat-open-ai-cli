@@ -16,6 +16,13 @@ final class AskOpenAI extends Base
             ->setName('chat')
             ->setDescription('Ask questions to ChatGPT from the CLI.')
             ->addOption(
+                'gpt4',
+                '4',
+                InputOption::VALUE_NONE,
+                'Use the OpenAI GPT-4 API model: "gpt-4-0314" (instead of using the default model: "gpt-3.5-turbo-0301").',
+                null
+            )
+            ->addOption(
                 'multiline',
                 'm',
                 InputOption::VALUE_NONE,

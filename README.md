@@ -1,4 +1,4 @@
-# Chat using OpenAI API from CLI
+# ChatGPT from the CLI
 
 :robot: Ask questions to ChatGPT from the CLI.
 
@@ -54,6 +54,13 @@ php console chat
 
 
 ## OPTIONS:
+
+To use OpenAI **GPT-4** API:
+
+```bash
+php console chat --gpt4
+```
+
 
 Allow **multiline** with this command:
 
