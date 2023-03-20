@@ -23,8 +23,7 @@ abstract class Base extends Command
 
         $this->messages[] = ['role' => 'user', 'content' => $prompt];
 
-//        $model = 'gpt-3.5-turbo-0301';
-        $model = 'gpt-4-0314';
+        $model = $this->getModel($input);
 
         $answer = $this->askOpenAI($model, 500);
 
@@ -54,6 +53,16 @@ abstract class Base extends Command
         } while ($prompt === null || $prompt === '');
 
         return $prompt;
+    }
+
+    protected function getModel(InputInterface $input): string
+    {
+        $model = 'gpt-3.5-turbo-0301';
+        if ($input->getOption('gpt4') === true) {
+            $model = 'gpt-4-0314';
+        }
+
+        return $model;
     }
 
     protected function askOpenAI(
