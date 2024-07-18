@@ -57,9 +57,9 @@ abstract class Base extends Command
 
     protected function getModel(InputInterface $input): string
     {
-        $model = 'gpt-3.5-turbo-0613';
+        $model = 'gpt-3.5-turbo';
         if ($input->getOption('gpt4') === true) {
-            $model = 'gpt-4-0314';
+            $model = 'gpt-4o-mini';
         }
 
         return $model;
