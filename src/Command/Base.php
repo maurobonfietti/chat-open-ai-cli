@@ -17,15 +17,14 @@ abstract class Base extends Command
 
     protected function chat(
         InputInterface $input,
-        OutputInterface $output
+        OutputInterface $output,
+        string $model
     ): void {
         $prompt = $this->prompt($input, $output);
 
         $this->messages[] = ['role' => 'user', 'content' => $prompt];
 
-        $model = $this->getModel($input);
-
-        $answer = $this->askOpenAI($model, 500);
+        $answer = $this->askOpenAI($model, 4000);
 
         $this->writeAnswer($output, $answer);
 
@@ -61,21 +60,22 @@ abstract class Base extends Command
         if ($input->getOption('gpt4') === true) {
             $model = 'gpt-4o-mini';
         }
+        if ($input->getOption('gpt5') === true) {
+            $model = 'gpt-5';
+        }
 
         return $model;
     }
 
-    protected function askOpenAI(
-        string $model,
-        int $tokens
-    ) {
+    protected function askOpenAI(string $model, int $tokens)
+    {
         $apiKey = (string) getenv('OPEN_AI_SECRET_API_KEY');
         $client = \OpenAI::client($apiKey);
 
         return $client->chat()->create([
             'model' => $model,
             'messages' => $this->messages,
-            'max_tokens' => $tokens,
+            'max_completion_tokens' => $tokens,
         ]);
     }
 
