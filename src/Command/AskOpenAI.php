@@ -19,7 +19,14 @@ final class AskOpenAI extends Base
                 'gpt4',
                 '4',
                 InputOption::VALUE_NONE,
-                'Use the OpenAI GPT-4 API model: "gpt-4-0314" (instead of using the default model: "gpt-3.5-turbo-0301").',
+                'Use the OpenAI GPT-4 API model: "gpt-4o-mini" (instead of using the default model: "gpt-3.5-turbo").',
+                null
+            )
+            ->addOption(
+                'gpt5',
+                '5',
+                InputOption::VALUE_NONE,
+                'Use the OpenAI GPT-5 API model: "gpt-5" (instead of using the default model: "gpt-3.5-turbo").',
                 null
             )
             ->addOption(
@@ -35,7 +42,7 @@ final class AskOpenAI extends Base
     protected function execute(
         InputInterface $input,
         OutputInterface $output
-    ): int {
+    ) {
         $output->writeln([
             '===============================================',
             '<info>Welcome! Ask questions to ChatGPT from the CLI:</info>',
@@ -43,8 +50,11 @@ final class AskOpenAI extends Base
             '',
         ]);
 
+        $model = $this->getModel($input);
+        $output->writeln(['<comment>[Model:]</comment> ' . $model, '', '']);
+
         while (true) {
-            $this->chat($input, $output);
+            $this->chat($input, $output, $model);
         }
     }
 }
