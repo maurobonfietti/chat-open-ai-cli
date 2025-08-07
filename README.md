@@ -38,7 +38,7 @@ Create an account on **OpenAI** to get your **API KEY**.
 #### Screenshot from OpenAI Platform:
 
 <p align="left">
-    <img src="multimedia/ScreenshotApiKey.png" width="400" alt="Screenshot: Get your API KEY from OPEN AI Platform.">
+    <img src="multimedia/ScreenshotChatGpt5Cli.png" width="400" alt="Screenshot: Get your API KEY from OPEN AI Platform.">
 </p>
 
 ------
@@ -54,6 +54,13 @@ php console chat
 
 
 ## OPTIONS:
+
+To use OpenAI **GPT-5** API:
+
+```bash
+php console chat --gpt5
+```
+
 
 To use OpenAI **GPT-4** API:
 

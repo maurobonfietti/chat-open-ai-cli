@@ -51,7 +51,7 @@ final class AskOpenAI extends Base
         ]);
 
         $model = $this->getModel($input);
-        $output->writeln(['<comment>[Model:]</comment> ' . $model, '', '']);
+        $output->writeln(['<comment>[Model:]</comment> ' . $model, '']);
 
         while (true) {
             $this->chat($input, $output, $model);
