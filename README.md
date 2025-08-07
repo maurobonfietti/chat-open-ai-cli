@@ -2,7 +2,7 @@
 
 :robot: Ask questions to ChatGPT from the CLI.
 
-![alt text](multimedia/ScreenshotChatCli.png "Screenshot: Chat using OpenAI API from CLI")
+![alt text](multimedia/ScreenshotChatGpt5Cli.png "Screenshot: Chat using OpenAI API from CLI")
 
 ------
 
@@ -38,7 +38,7 @@ Create an account on **OpenAI** to get your **API KEY**.
 #### Screenshot from OpenAI Platform:
 
 <p align="left">
-    <img src="multimedia/ScreenshotChatGpt5Cli.png" width="400" alt="Screenshot: Get your API KEY from OPEN AI Platform.">
+    <img src="multimedia/ScreenshotApiKey.png" width="400" alt="Screenshot: Get your API KEY from OPEN AI Platform.">
 </p>
 
 ------
